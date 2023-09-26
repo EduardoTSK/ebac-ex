@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Exercício Módulo 7</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Cadastrar</h1>
-    <label for="nome">Nome</label>
-    <input type="text" id="nome" placeholder="Seu nome"> <br>
-    <label for="email">Email</label>
-    <input type="email" id="email" placeholder="Seu e-mail"> <br>
-    <label for="senha">Senha</label>
-    <input type="password" id="senha" placeholder="Sua senha"> <br>
-    <button type="submit">Cadastrar</button>
+    <div class="container">
+        <h1>Validação</h1>
+        <h2>Formulário</h2>
+        <form id="form">
+            <input type="number" id="campoA" placeholder="Campo A">
+            <input type="number" id="campoB" placeholder="Campo B">
+            <button type="submit" id="bttn">Enviar</button>
+        </form>
+        <p class="error-msg">O valor do campo A precisa ser menor que o do campo B</p>
+        <p class="msg-sucess"></p>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
